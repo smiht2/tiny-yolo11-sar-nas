@@ -14,7 +14,7 @@ This project discovers and trains **tiny YOLO11-style** models for **SAR ship de
 | NSGA-II knee (warm) | **5.21M** | **14.3** | **0.706** |    ~**2.0 ms** |
 
 > Notes:
-> • Baseline measured from your trained YOLO11x checkpoint.
+> • Baseline measured from trained YOLO11x checkpoint.
 > • NSGA-knee “warm” = 50-epoch retrain; accuracy typically improves with 120–200 epochs (early stop).
 > • Latency is Ultralytics’ GPU forward timing; confirm on device (TensorRT) for deployment.
 
@@ -60,7 +60,7 @@ pip install ultralytics==8.3.203 thop pyyaml numpy pillow opencv-python matplotl
 
 ## Dataset config
 
-Edit `cfg/data_ssdd.yaml` to point to your SSDD path.
+Edit `cfg/data_ssdd.yaml` to point to your dataset path.
 
 ```yaml
 # cfg/data_ssdd.yaml
@@ -70,8 +70,6 @@ val:   ${path}/val/images
 test:  ${path}/test/images   # optional
 names: [ship]
 ```
-
-*(Do not commit raw datasets to the repo.)*
 
 ---
 
@@ -201,8 +199,7 @@ Refer to Ultralytics’ license and documentation for usage terms.
 
 ## License
 
-Add your preferred license (MIT/Apache-2.0). Include dataset licenses as applicable.
-
+-
 ---
 
 ## Acknowledgements
