@@ -1,0 +1,5 @@
+path: C:/Users/pretha/Desktop/optimization-paper-code/SSDD.v1i.yolov11
+train: ${{path}}/train/images
+val:   ${{path}}/val/images
+test:  ${{path}}/test/images  # optional
+names: [ship]

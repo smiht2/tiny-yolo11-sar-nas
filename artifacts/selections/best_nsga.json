@@ -1,0 +1,17 @@
+{
+  "rep_128": "2",
+  "rep_256": "1",
+  "rep_512": "3",
+  "width_mult": "0.33",
+  "down_op": "GhostConv",
+  "down_k": "3",
+  "pan_repeats": "1",
+  "mAP": 0.591332517393637,
+  "lat_ms": 6.043157577514648,
+  "on_disk_mb": 10.205801963806152,
+  "sd_size_mb": 19.97677993774414,
+  "weights": "C:\\Users\\pretha\\Desktop\\acyolo\\ACYOLO\\runs\\nas_yolo11_ssdd_nsga2\\cand_1762059356951_2576\\train\\weights\\best.pt",
+  "yaml": "C:\\Users\\pretha\\Desktop\\acyolo\\ACYOLO\\runs\\nas_yolo11_ssdd_nsga2\\cand_1762059356951_2576\\model.yaml",
+  "run_dir": "C:\\Users\\pretha\\Desktop\\acyolo\\ACYOLO\\runs\\nas_yolo11_ssdd_nsga2\\cand_1762059356951_2576",
+  "knee_distance": 1.0
+}
