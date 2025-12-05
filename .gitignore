@@ -1,0 +1,157 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+venv310/
+ENV/
+env/
+.venv/
+.env/
+poetry.lock
+
+# PyTorch and ML Models
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+*.weights
+*.ckpt
+!weights/*.pt
+# Keep specific baseline weights
+!weights/baseline_y11x_best.pt
+!weights/ea_tiny_best.pt
+!weights/nsga_knee_best.pt
+
+# YOLO/Ultralytics
+runs/
+wandb/
+mlruns/
+.wandb/
+
+# Dataset related (keep structure but not actual data)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.mp4
+*.avi
+*.mov
+nas_train_data/train/images/*
+nas_train_data/val/images/*
+nas_train_data/test/images/*
+!nas_train_data/**/.gitkeep
+
+# Logs and outputs
+*.log
+logs/
+*.csv
+artifacts/logs/*.csv
+!artifacts/logs/.gitkeep
+output.txt
+*.out
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.pydevproject
+.project
+.settings/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+*.ipynb
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# profiling
+*.prof
+
+# Documentation
+docs/_build/
+site/
+
+# OS specific
+Thumbs.db
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib
+tmp/
+temp/
+
+# UV package manager
+.uv_cache/
+
+# Package lock files (optional - uncomment if you want to exclude)
+# poetry.lock
+# uv.lock
+# requirements-lock.txt
+
+# Large result files
+*.pickle
+*.pkl
+
+# Compiled translations
+*.mo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+*.cache
