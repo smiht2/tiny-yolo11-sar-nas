@@ -40,11 +40,7 @@ poetry.lock
 *.tflite
 *.weights
 *.ckpt
-!weights/*.pt
-# Keep specific baseline weights
-!weights/baseline_y11x_best.pt
-!weights/ea_tiny_best.pt
-!weights/nsga_knee_best.pt
+
 
 # YOLO/Ultralytics
 runs/
@@ -67,6 +63,7 @@ nas_train_data/train/images/*
 nas_train_data/val/images/*
 nas_train_data/test/images/*
 !nas_train_data/**/.gitkeep
+nas_train_data/*
 
 # Logs and outputs
 *.log

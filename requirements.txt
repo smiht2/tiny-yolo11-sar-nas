@@ -1,0 +1,27 @@
+# This file is maintained for compatibility.
+# For new installations, use: pip install -e .
+# The project dependencies are defined in pyproject.toml
+
+# Deep Learning Framework
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+# YOLO and Computer Vision
+ultralytics==8.3.203
+opencv-python>=4.8.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+pillow>=10.0.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Configuration and Utilities
+pyyaml>=6.0
+thop>=0.1.1
+
+# Development Tools (optional)
+tqdm>=4.65.0

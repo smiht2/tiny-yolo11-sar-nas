@@ -1,0 +1,58 @@
+[build-system]
+# For pip/setuptools (standard)
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# For Poetry (alternative - uncomment to use)
+# requires = ["poetry-core"]
+# build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "tiny-yolo11-sar-nas"
+version = "0.1.0"
+description = "Neural Architecture Search for Tiny YOLO11 on SAR datasets"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "prethasur"}
+]
+
+dependencies = [
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "torchaudio==2.5.1",
+    "ultralytics==8.3.203",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "pillow>=10.0.0",
+    "matplotlib>=3.7.0",
+    "pyyaml>=6.0",
+    "thop>=0.1.1",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[tool.setuptools]
+packages = ["nas"]
+
+[tool.setuptools.package-data]
+"*" = ["*.yaml", "*.yml"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"

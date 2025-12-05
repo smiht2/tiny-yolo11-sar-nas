@@ -1,0 +1,5 @@
+path: /home/iisri/tiny-yolo11-sar-nas/nas_train_data
+train: train/images
+val:   val/images
+test:  test/images  # optional
+names: [ship]

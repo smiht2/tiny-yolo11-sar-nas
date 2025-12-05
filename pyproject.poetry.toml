@@ -1,0 +1,42 @@
+# This file shows Poetry-specific configuration
+# To use Poetry, replace the [build-system] section in pyproject.toml with:
+#
+# [build-system]
+# requires = ["poetry-core"]
+# build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "tiny-yolo11-sar-nas"
+version = "0.1.0"
+description = "Neural Architecture Search for Tiny YOLO11 on SAR datasets"
+authors = ["prethasur"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "nas"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "2.5.1"
+torchvision = "0.20.1"
+torchaudio = "2.5.1"
+ultralytics = "8.3.203"
+opencv-python = "^4.8.0"
+numpy = "^1.24.0"
+pandas = "^2.0.0"
+pillow = "^10.0.0"
+matplotlib = "^3.7.0"
+pyyaml = "^6.0"
+thop = "^0.1.1"
+tqdm = "^4.65.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^23.0.0"
+flake8 = "^6.0.0"
+mypy = "^1.0.0"
+ipython = "^8.0.0"
+jupyter = "^1.0.0"
+
+# For CUDA-specific PyTorch installation with Poetry:
+# poetry source add pytorch-cu121 https://download.pytorch.org/whl/cu121
+# poetry add torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --source pytorch-cu121
